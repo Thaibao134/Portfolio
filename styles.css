@@ -1,3 +1,68 @@
+/* Experience card grid styles */
+.card-grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	justify-content: center;
+	margin-top: 2rem;
+}
+.exp-card {
+	background: #232325;
+	border-radius: 16px;
+	box-shadow: 0 2px 12px 0 rgba(0,0,0,0.12);
+	padding: 2rem 1.5rem;
+	width: 270px;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
+	transition: box-shadow 0.2s, transform 0.2s;
+	border: 1px solid #333;
+}
+.exp-card:hover {
+	box-shadow: 0 4px 24px 0 rgba(0,0,0,0.18);
+	transform: translateY(-4px) scale(1.50);
+}
+.exp-icon {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	background: #18181a;
+	border-radius: 50%;
+	width: 48px;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 1px 4px 0 rgba(0,0,0,0.10);
+}
+.exp-title {
+	font-weight: bold;
+	font-size: 1.50rem;
+	margin-bottom: 0.5rem;
+}
+.exp-desc {
+	font-size: 1.25rem;
+	color: #bdbdbd;
+}
+/* Moving background video styles */
+.moving-background {
+	position: relative;
+	overflow: hidden;
+}
+.background-video {
+	position: absolute; 
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	object-fit: cover;
+	opacity: 0.5;
+	pointer-events: none;
+}
+
+
+
 /* Navigation styles */
 nav {
 	background: #222;
@@ -44,12 +109,30 @@ nav a:hover, nav a:focus {
 	padding: 0 2rem;
 }
 .starting-section h2 {
-	font-size: 2.5rem;
+	font-size: 10rem;
 	margin-bottom: 1rem;
 }
 .starting-section p {
 	font-size: 1.25rem;
 	max-width: 600px;
+}
+
+/* moving background styles */
+.moving-background {
+	background-image: url(photos/Cieling_Flames_4K_Motion_Background_Loop.mp4);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 0%;
+	}
+	50% {
+		background-position: 100% 100%;
+	}
+	100% {
+		background-position: 0% 0%;
+	}
 }
 
 /* experience section styles */
@@ -58,7 +141,7 @@ nav a:hover, nav a:focus {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	/* align-items: center; */
 	background: #f5f7fa;
 	text-align: center;
 	padding: 0 2rem;
