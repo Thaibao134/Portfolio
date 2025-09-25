@@ -1,0 +1,93 @@
+/* Navigation styles */
+nav {
+	background: #222;
+	/* position: sticky; */
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+nav ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+nav li {
+	margin: 0 1.5rem;
+}
+nav a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 1.1rem;
+	padding: 1rem 0;
+	display: block;
+	transition: color 0.2s;
+}
+nav a:hover, nav a:focus {
+	color: #00bcd4;
+}
+
+
+/* starting section styles */
+.starting-section {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #f5f7fa;
+	text-align: center;
+	padding: 0 2rem;
+}
+.starting-section h2 {
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+}
+.starting-section p {
+	font-size: 1.25rem;
+	max-width: 600px;
+}
+
+/* experience section styles */
+.experience-section {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #f5f7fa;
+	text-align: center;
+	padding: 0 2rem;
+}
+.experience-section h2 {
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+}
+.experience-section p {
+	font-size: 1.25rem;
+	max-width: 600px;
+}
+
+/* projects section styles */
+.projects-section {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #f5f7fa;
+	text-align: center;
+	padding: 0 2rem;
+}
+.projects-section h2 {
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+}
+.projects-section p {
+	font-size: 1.25rem;
+	max-width: 600px;
+}
