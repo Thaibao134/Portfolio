@@ -1,3 +1,42 @@
+/* Projects section flex row */
+.project-flex-row {
+	display: flex;
+	gap: 2rem;
+	justify-content: center;
+	align-items: flex-start;
+	margin-top: 2rem;
+}
+.project-boxes {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+.project-info-display {
+	min-width: 200px;
+	min-height: 80px;
+	padding: 1rem;
+	background: #18181a;
+	color: #fff;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.info-box {
+	width: 120px;
+	height: 80px;
+	background: #232325;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	border-radius: 10px;
+	transition: background 0.2s;
+}
+.info-box:hover {
+	background: #333;
+}
 /* Experience card grid styles */
 .card-grid {
 	display: flex;
@@ -50,6 +89,21 @@
 	position: relative;
 	overflow: hidden;
 }
+
+.background-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 0;
+	pointer-events: none;
+}
+.moving-background > *:not(.background-video) {
+	position: relative;
+	z-index: 1;
+}
 .background-video {
 	position: absolute; 
 	min-width: 100%;
@@ -87,7 +141,7 @@ nav a {
 	color: #fff;
 	text-decoration: none;
 	font-weight: 500;
-	font-size: 1.1rem;
+	font-size: 1.5rem;
 	padding: 1rem 0;
 	display: block;
 	transition: color 0.2s;
@@ -135,6 +189,9 @@ nav a:hover, nav a:focus {
 	}
 }
 
+
+
+
 /* experience section styles */
 .experience-section {
 	min-height: 100vh;
@@ -146,6 +203,7 @@ nav a:hover, nav a:focus {
 	text-align: center;
 	padding: 0 2rem;
 }
+
 .experience-section h2 {
 	font-size: 2.5rem;
 	margin-bottom: 1rem;
@@ -154,6 +212,12 @@ nav a:hover, nav a:focus {
 	font-size: 1.25rem;
 	max-width: 600px;
 }
+
+.experience-section h2 {
+	font-size: 5rem;
+	margin-bottom: 1rem;
+}
+
 
 /* projects section styles */
 .projects-section {
@@ -167,10 +231,76 @@ nav a:hover, nav a:focus {
 	padding: 0 2rem;
 }
 .projects-section h2 {
-	font-size: 2.5rem;
+	font-size: 5rem;
 	margin-bottom: 1rem;
 }
+
 .projects-section p {
 	font-size: 1.25rem;
 	max-width: 600px;
+}
+
+.carousel-flex-row {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: stretch;
+}
+.carousel-left {
+  width: 50%;
+  /* min-width: 0;
+  display: flex;
+  align-items: center; */
+}
+.carousel-right {
+  width: 50%;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#project-display.project-info-display {
+  min-width: 70%;
+  min-height: 70%;
+  background: linear-gradient(135deg, #232325 0%, #18181a 100%);
+  color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.10);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+/* Swiper vertical carousel styles */
+#swiper-carousel-demo .swiper {
+  width: 100%;
+  height: 400px;
+}
+#swiper-carousel-demo .swiper-slide.text-slide {
+  background: linear-gradient(135deg, #b2fefa 0%, #e0c3fc 100%);
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.10);
+  border-radius: 18px;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem 0;
+}
+#swiper-carousel-demo .slide-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+#swiper-carousel-demo .slide-desc {
+  font-size: 1.1rem;
+  color: #444;
+  text-align: center;
+  max-width: 320px;
 }
